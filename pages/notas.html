@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header></header>
+    <main>
+
+        <table cellspacing = "10px" align = "center">
+
+            <tr>
+
+                <td colspan="4" align = "center">
+
+                    <h2>Notas do primeiro bimestre</h2>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+             
+    
+                <th>
+                    Projeto 1
+                </th>
+    
+                <th>
+                   Projeto 2
+                </th>
+
+  
+
+                <th>
+
+                    Média do bimestre
+
+                </th>
+    
+                
+
+
+            </tr>
+
+            <tr>
+
+
+                <td>
+
+                    <input type="number" id="projeto1"/>
+
+                    
+                </td>
+
+                <td>
+
+                    <input type="number" id="projeto2"/>
+
+                    
+                </td>
+
+                <td>
+
+                    <input type="number" id="notaBimestre1"/> 
+
+                    
+                    
+                </td>
+
+               
+
+            </tr>
+
+            <tr>
+
+                <td colspan="4" align = "center">
+
+                    <h2>Notas do segundo bimestre</h2>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+             
+    
+                <th>
+                    Projeto 3
+                </th>
+    
+                <th>
+                   Projeto 4
+                </th>
+				
+				 <th>
+
+                    Média do bimestre
+
+                </th>
+    
+
+                
+
+             
+    
+                
+
+
+            </tr>
+
+            <tr>
+
+
+                <td>
+
+                    <input type="number" id="projeto3"/>
+
+                    
+                </td>
+
+                <td>
+
+                    <input type="number" id="projeto4"/>
+
+                    
+                </td>
+
+                <td>
+
+                    <input type="number" id="notaBimestre2" readonly = true/>
+
+                    
+                    
+                </td>
+
+                    
+
+               
+
+            </tr>
+
+            <tr>
+
+                <td colspan="4" align = "center">
+
+                    <h2>Relatório Final</h2>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th> Média Final</th>
+
+            
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <input type="number" id="media" readonly = true/>
+
+                    
+                </td>
+
+            </tr>
+            
+
+        </table>
+		
+		<br></br>
+
+        <div margin-top = "100px" align = "center">
+
+            <input type="button" 
+                    value="Calcular nota do primeiro bimestre" 
+                    id ="calcularNotaBimestre1"
+                    onclick="javascript: 
+                        document.getElementById('notaBimestre1').value = (
+                           ( parseInt(document.getElementById('projeto1').value)  * 0.2 ) + 
+                          (  parseInt(document.getElementById('projeto2').value) * 0.8 ) )
+            ">
+
+            <input type="button" value="Calcular nota do segundo bimestre" id ="calcularNotaBimestre2"
+                    onclick="javascript: 
+                    document.getElementById('notaBimestre2').value = (
+                    ( parseInt(document.getElementById('projeto3').value)  * 0.2 ) + 
+                    (  parseInt(document.getElementById('projeto4').value) * 0.8 ) )
+            ">
+
+            <input type="button" value="Calcular média final" id ="calcularMedia" 
+                    onclick="javascript: 
+                    document.getElementById('media').value = 
+                        (  parseInt(document.getElementById('notaBimestre1').value)  + 
+                        parseInt(document.getElementById('notaBimestre2').value) ) / 2 
+            ">   
+                
+           
+
+        </div>
+
+
+        
+
+
+    </main>
+    
+</body>
+</html>
