@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header></header>
+    <main>
+
+        <table cellspacing = "10px" align = "center">
+
+            <tr>
+
+                <td colspan="4" align = "center">
+
+                    <h2>Notas do primeiro bimestre</h2>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+             
+    
+                <th>
+                    Projeto 1
+                </th>
+    
+                <th>
+                   Projeto 2
+                </th>
+
+                <th>
+                    Nota do bimestre 1
+                </th>
+
+              
+    
+                
+
+
+            </tr>
+
+            <tr>
+
+
+                <td>
+
+                    <input type="number" id="projeto1"/>
+
+                    
+                </td>
+
+                <td>
+
+                    <input type="number" id="projeto2"/>
+
+                    
+                </td>
+
+                <td>
+
+                    <input type="number" id="bimestre1" readonly = "true"/> 
+
+                    
+                    
+                </td>
+
+               
+
+            </tr>
+
+            <tr>
+
+                <td colspan="4" align = "center">
+
+                    <h2>Notas do segundo bimestre</h2>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+             
+    
+                <th>
+                    Projeto 3
+                </th>
+    
+                <th>
+                   Projeto 4
+                </th>
+
+                <th>
+                    Nota do bimestre 2
+                </th>
+
+             
+    
+                
+
+
+            </tr>
+
+            <tr>
+
+
+                <td>
+
+                    <input type="number" id="projeto3"/>
+
+                    
+                </td>
+
+                <td>
+
+                    <input type="number" id="projeto4"/>
+
+                    
+                </td>
+
+                <td>
+
+                    <input type="number" id="bimestre2" readonly = true/>
+
+                    
+                    
+                </td>
+
+              
+
+                    
+
+               
+
+            </tr>
+
+            <tr>
+
+                <td colspan="4" align = "center">
+
+                    <h2>Relatório Final</h2>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th> Média Final</th>
+
+            
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <input type="number" id="media" readonly = true/>
+
+                    
+                </td>
+
+            </tr>
+            
+
+        </table>
+
+        <div margin-top = "100px" align = "center">
+
+            <input type="button" 
+                    value="Calcular nota do primeiro bimestre" 
+                    id ="calcularNotaBimestre1"
+                    
+                    onclick ="calculaNotaBimestre(document.getElementById('projeto1').value,
+                                            document.getElementById('projeto2').value,
+                                            document.getElementById('bimestre1'))"
+            >
+
+            <input type="button" value="Calcular nota do segundo bimestre" id ="calcularNotaBimestre2"
+                    
+                    onclick ="calculaNotaBimestre(document.getElementById('projeto3').value,
+                                            document.getElementById('projeto4').value,
+                                            document.getElementById('bimestre2'))"
+                        
+            >
+
+            <input type="button" value="Calcular média final" id ="calcularMedia" 
+
+                    onclick ="calculaMedia(document.getElementById('bimestre1').value,
+                                            document.getElementById('bimestre2').value,
+                                            document.getElementById('media'))"
+                  
+            >   
+                
+           
+
+        </div>
+
+
+        
+
+
+    </main>
+
+    <script src="../scripts/script.js"></script>
+    
+</body>
+</html>
