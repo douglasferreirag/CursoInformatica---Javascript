@@ -1,0 +1,22 @@
+[
+
+        {
+
+            "cpf": "309.898.110-50",
+            "nomeCompleto" : "Luan Cardoso Azevedo",
+            "contato": "(63) 3437-5559",
+            "codigoEndereco" : 1
+
+        },
+
+        {
+
+            "cpf": "820.194.030-05",
+            "nomeCompleto" : "Breno Ribeiro Pereira",
+            "contato": "(79) 2251-1121",
+            "codigoEndereco" : 1
+
+        }
+  
+
+]
