@@ -1,0 +1,27 @@
+{
+
+        "Endereco": [
+
+            {
+
+                "codigo": "o2DQ",
+                "rua": "66345 Yango Alameda",
+                "cidade": "Salvador", 
+                "estado": "Bahia"
+
+            },
+
+            {
+
+                "codigo": "4pxhe",
+                "rua": "202 Silas Alameda",
+                "cidade": "Palmas",
+                "estado": "Tocantins"
+
+            }
+
+
+
+        ]
+
+}
